@@ -58,7 +58,7 @@ font-size: 15px;
     padding: 10px;
     color: rgb(61, 61, 61);
     font-size: 18px;
-    font-family:"Poppins";
+    
    font-weight: none;
    cursor: pointer;
    text-transform: capitalize;
@@ -68,11 +68,6 @@ font-size: 15px;
     background-color: rgb(229, 255, 229);
     border-radius: 7px;
 }
-.header nav i{
-    font-size: 20px;
-    color: black;
-   
-}
 .header nav input{
   background-color: rgb(242, 239, 239);
   border: none;
@@ -80,4 +75,19 @@ font-size: 15px;
   border-radius: 8px;
   color: rgb(115, 114, 114);
   letter-spacing: 2px;
+}
+.header nav button{
+    padding: 7px 35px;
+    border:2px solid rgb(18, 179, 55);
+    background-color:white;
+    color: rgb(32, 158, 32);
+    font-weight: bold;
+    cursor:pointer;
+    border-radius: 7px;
+    margin-left: 10px;
+    font-size: 17px;
+}
+
+.header nav button:hover{
+color: black;
 }
