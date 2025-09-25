@@ -7,7 +7,7 @@
 }
 body{
 
-    background-color:rgb(218, 248, 218);
+  background-color: #ffffff;  ;
 }
 a{
 text-decoration: none !important;
@@ -114,4 +114,72 @@ cursor: pointer;
 .header nav .fi-sr-shopping-cart:hover{
 color: black;
 background-color: #ffffff;  
+ color: rgb(32, 158, 32);
 }
+
+/* home section is start */
+
+.bodyContainer{
+    display: flex;
+    flex-direction: row;
+    padding: 60px;
+}
+.firstRow{
+    display: flex;
+    flex-direction: column;
+}
+.bodyContainer .secRow img{
+border-radius: 7px;
+margin-top: 60px;
+cursor: pointer;
+}
+.bodyContainer .firstRow h1{
+ font-family:"Poppins";
+ margin-top: 60px;
+ font-size: 50px;
+ text-transform: capitalize ;
+}
+.bodyContainer .firstRow span{
+  color: rgb(32, 158, 32); 
+}
+.bodyContainer .firstRow p{
+color: rgb(49, 49, 49);
+font-size: 18px;
+padding: 10px;
+line-height:31px;
+ font-family:"Poppins";
+}
+.fi-ss-arrow-small-right{
+    font-size: 18px;
+    color: white;
+}
+.bodyContainer .firstRow .showNow{
+padding: 8px 18px;
+border: none;
+border-radius: 7px;
+background-color: rgb(32, 158, 32); 
+color: white;
+font-size: 15px;
+font-weight: 500;
+ font-family:"Poppins";
+ cursor: pointer;
+}
+.bodyContainer .firstRow .showNow:hover{
+background-color:#008000;
+}
+.bodyContainer .firstRow .Learn{
+  padding: 8px 18px;
+border:2px solid rgb(32, 158, 32);
+border-radius: 7px;
+background-color:white; 
+color:  rgb(32, 158, 32);
+font-size: 15px;
+font-weight: 500;
+ font-family:"Poppins";
+ cursor: pointer;  
+}
+.bodyContainer .firstRow .Learn:hover{
+ color: black;
+}
+   
+
