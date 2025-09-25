@@ -181,5 +181,10 @@ font-weight: 500;
 .bodyContainer .firstRow .Learn:hover{
  color: black;
 }
-   
+.vertical-line{
+    width: 50%;
+    height: 1px;
+    background-color: #008000;
+    margin: 50px;
+}  
 
