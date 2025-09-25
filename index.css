@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900");
+
+@import url('https://cdn-uicons.flaticon.com/3.0.0/uicons-brands/css/uicons-brands.css');
 *{
     margin: 0px;
     padding: 0px;
@@ -68,6 +70,9 @@ font-size: 15px;
     background-color: rgb(229, 255, 229);
     border-radius: 7px;
 }
+i{
+    font-size: 20px;
+}
 .header nav input{
   background-color: rgb(242, 239, 239);
   border: none;
@@ -76,8 +81,13 @@ font-size: 15px;
   color: rgb(115, 114, 114);
   letter-spacing: 2px;
 }
+.fi-sr-phone-call{
+    font-size: 16px;
+    margin-right:17px;
+    margin-top: 5px;
+}
 .header nav button{
-    padding: 7px 35px;
+    padding: 7px 15px;
     border:2px solid rgb(18, 179, 55);
     background-color:white;
     color: rgb(32, 158, 32);
@@ -86,8 +96,22 @@ font-size: 15px;
     border-radius: 7px;
     margin-left: 10px;
     font-size: 17px;
+    
 }
 
 .header nav button:hover{
 color: black;
+background-color: #ffffff;
+}
+.header nav .fi-sr-shopping-cart{
+  border:2px solid rgb(18, 179, 55);
+padding: 7px 12px;
+border-radius: 8px;
+font-size: 17px;
+margin-left: 8px;
+cursor: pointer;
+}
+.header nav .fi-sr-shopping-cart:hover{
+color: black;
+background-color: #ffffff;  
 }
