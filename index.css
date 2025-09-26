@@ -49,6 +49,24 @@ font-size: 15px;
 
 }
 /* logo design end */
+
+/* ratting bar start */
+.ratingContainer{
+ display:inline-flex;
+
+}
+.ratingContainer span{
+  color: gray !important;
+  margin-top: 15px;
+  
+}
+.ratingContainer .checked{
+  color: rgb(247, 201, 21) !important;
+}
+.ratingContainer p{
+  font-size: 16px !important;
+}
+/* ratting bar end */
 /* nav bar logo design started */
 .header nav ul {
     display: inline-flex;
@@ -122,7 +140,7 @@ background-color: #ffffff;
 .bodyContainer{
     display: flex;
     flex-direction: row;
-    padding: 60px;
+    padding: 50px;
 }
 .firstRow{
     display: flex;
@@ -130,12 +148,12 @@ background-color: #ffffff;
 }
 .bodyContainer .secRow img{
 border-radius: 7px;
-margin-top: 60px;
+margin-top: 50px;
 cursor: pointer;
 }
 .bodyContainer .firstRow h1{
  font-family:"Poppins";
- margin-top: 60px;
+ margin-top: 10px;
  font-size: 50px;
  text-transform: capitalize ;
 }
@@ -154,7 +172,7 @@ line-height:31px;
     color: white;
 }
 .bodyContainer .firstRow .showNow{
-padding: 8px 18px;
+padding: 9px 18px;
 border: none;
 border-radius: 7px;
 background-color: rgb(32, 158, 32); 
