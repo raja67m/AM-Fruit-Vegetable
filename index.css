@@ -7,7 +7,7 @@
 }
 body{
 
-  background-color: #ffffff;  ;
+  background-color: #e6ffe6;  
 }
 a{
 text-decoration: none !important;
@@ -85,6 +85,11 @@ font-size: 15px;
 }
 .header nav ul li a:hover{
     color: rgb(56, 200, 56);
+    background-color: rgb(229, 255, 229);
+    border-radius: 7px;
+}
+.active{
+     color: rgb(56, 200, 56) !important;
     background-color: rgb(229, 255, 229);
     border-radius: 7px;
 }

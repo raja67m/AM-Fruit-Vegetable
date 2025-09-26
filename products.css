@@ -1,0 +1,52 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: white !important;
+}
+.productBody{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+}
+.productBody span{
+ color: rgb(32, 158, 32); 
+}
+.productBody h1{
+font-size: 30px;
+  font-family:"Poppins";
+}
+.productBody p{
+    font-size: 20px;
+    color: rgb(79, 78, 78);
+    padding: 20px;
+}
+.productBody .filter-tap{
+    border-radius: 20px;
+    background-color: rgb(228, 227, 227);
+    
+    width: 28%;
+    justify-content: center;
+    align-items: center;
+ 
+}
+.productBody .filter-tap button{
+    cursor: pointer;
+    background-color: rgb(228, 227, 227);
+    border: none;
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: 10px;
+      font-family:"Poppins";
+      padding: 15px;
+}
+.productBody .filter-tap button:hover{
+    background-color: white;
+    border-radius: 14px;
+     padding: 8px 15px;
+}
