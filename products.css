@@ -50,3 +50,96 @@ font-size: 30px;
     border-radius: 14px;
      padding: 8px 15px;
 }
+
+/* producs section start */
+
+.productGrid{
+    display: grid;
+    grid-template-columns:repeat(4,2flr);
+    gap: 20px;
+    padding: 5px;
+    margin: 10px;
+}
+.products{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgb(212, 209, 209);
+    border-radius: 8px;
+  font-family:"Poppins";
+  justify-content: center;
+  align-items: center;
+  line-height:0px;
+ background-color: white;
+ cursor: pointer;
+}
+.products img{
+    width: 55%;
+    height: 50%;
+}
+.products .Pname{
+ font-size: 20px;
+ color: black;  
+
+}
+.products .Pdes{
+    font-size: 14px;
+    color: rgb(77, 76, 76);
+line-height: 20px;
+width: 350px;
+
+ padding: 2px !important; 
+}
+.products .reviews{
+    display: flex;
+    flex-direction: row;
+    line-height: 0px;
+    
+}
+.products .reviews .fa-star{
+    color: rgb(240, 196, 4);
+    margin-top: 10px;
+}
+.products .reviews .reviewRate{
+  font-size: 15px;
+    color: rgb(77, 76, 76);
+    padding: 4px !important;
+     margin-top: 17px
+}
+.products .reviews .reviewCount{
+  font-size: 15px;
+    color: rgb(77, 76, 76);
+    padding: 4px !important;
+     margin-top: 17px   
+}
+.products .Pprice{
+    font-size: 19px;
+    font-weight: 550;
+ color: rgb(32, 158, 32); 
+}
+.products .productAdd{
+    display: flex;
+    flex-direction: row;
+}
+.products button{
+     padding: 10px 55px;
+    border: none;
+    background-color:white;
+    background-color: rgb(32, 158, 32);
+    color: white;
+    font-weight: 480;
+    cursor:pointer;
+    border-radius: 7px;
+    margin-left: 10px;
+    font-size: 16px;
+    margin: 5px 0px 15px 5px !important;
+    transition: .2s ease-out;
+      font-family:"Poppins";
+}
+.products button:hover{
+    background-color: green;
+}
+.fi-sr-shopping-cart{
+    font-size: 17px;
+    margin-right:13px;
+    margin-top: 16px !important;
+}
