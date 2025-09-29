@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900");
-
+@import url('https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css');
 
 *{
     margin:0px;
@@ -21,4 +21,39 @@
     text-align: center;
     margin: 16px;
     font-size: 19px;
+}
+.offers{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    width: 100%;
+    margin: 10px;
+}
+.offers .offer{
+    border:  2px solid blueviolet;
+    border-radius: 7px;
+    
+    background-color: rgb(242, 239, 245);
+    font-size: 13px;
+    color: blueviolet;
+    font-weight: 600;
+   
+}
+.offers .offer span{
+      font-size: 13px;
+       color: blueviolet; 
+       margin-top: 1px;
+}
+.limted{
+display: flex;
+flex-direction: row;
+border: 2px solid black;
+background-color: rgb(224, 223, 223);
+border-radius: 7px;
+    font-size: 13px;
+}
+.limted i{
+        font-size: 13px;
+      
+       margin-top: 10px;  
 }
