@@ -48,12 +48,16 @@
 display: flex;
 flex-direction: row;
 border: 2px solid black;
-background-color: rgb(224, 223, 223);
-border-radius: 7px;
-    font-size: 13px;
+background-color: rgb(239, 234, 234);
+border-radius: 12px;
+   
 }
 .limted i{
-        font-size: 13px;
-      
-       margin-top: 10px;  
+font-size: 11px;
+margin-top: 10px;  
+margin-left: 10px;  
+}
+.limted p{
+ font-size: 12px; 
+ padding: 2px !important;  
 }
