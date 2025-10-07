@@ -45,7 +45,7 @@ margin: 5px;
     flex-direction:row;
     background-color: white;
     padding: 20px;
-    margin: 10px 10px 10px 10px !important;
+    margin: 10px;
     border: 1px solid rgb(220, 219, 219);
     border-radius: 10px;
      font-family:"Poppins";
@@ -82,4 +82,15 @@ flex-direction: column;
 .informationContainer .contactInformation .information .addressContainer{
 display: flex;
 flex-direction: column;
+}
+
+/* contact form start */
+.contactform{
+  padding: 10px;
+  border: 2px solid gray; 
+  margin: 10px; 
+    border: 1px solid rgb(220, 219, 219);
+    border-radius: 10px;
+     font-family:"Poppins";
+     background-color: white;
 }
