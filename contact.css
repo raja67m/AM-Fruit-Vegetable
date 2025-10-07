@@ -1,0 +1,18 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: rgb(248, 244, 244);
+}
+.containerContact{
+    display: flex;
+    flex-direction: column;
+
+}
+.getTocuhContainer{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
