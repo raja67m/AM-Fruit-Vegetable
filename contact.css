@@ -1,5 +1,5 @@
 @import url('https://cdn-uicons.flaticon.com/3.0.0/uicons-thin-rounded/css/uicons-thin-rounded.css');
-
+@import url('https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-straight/css/uicons-regular-straight.css');
 *{
     margin: 0px;
     padding: 0px;
@@ -86,11 +86,117 @@ flex-direction: column;
 
 /* contact form start */
 .contactform{
-  padding: 10px;
+  padding: 25px ;
   border: 2px solid gray; 
   margin: 10px; 
     border: 1px solid rgb(220, 219, 219);
     border-radius: 10px;
      font-family:"Poppins";
      background-color: white;
+     display: flex;
+     flex-direction: column;
+    width: 34%;
+}
+.contactform p{
+    color: black;
+    font-size: 15px;
+    font-weight: 350;
+    letter-spacing: 1px;
+}
+.contactform .messageCon{
+    display: flex;
+    flex-direction: row;
+    
+}
+.contactform .messageCon label{
+    font-weight: 550;
+    font-size: 13px;
+    margin: 25px 10px 3px 0px;
+}
+.contactform .messageCon input,select{
+    padding: 13px 25px;
+      margin: 0px 20px 0px 0px;
+      border: 1px solid rgb(239, 237, 237);
+      border-radius: 9px;
+      background-color: rgb(243, 241, 241);
+      font-size: 13px;
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.contactform .messageCon input:focus,select:focus{
+    border-color: #c2c3c4; 
+  box-shadow: 0 0 5px rgba(229, 230, 230, 0.5);
+    outline: none;
+}
+.contactform .messageCon .firstRow{
+display: flex;
+flex-direction: column;
+}
+.contactform .messageCon .secrow{
+    display: flex;
+    flex-direction: column;
+}
+.contactform label{
+font-weight: 550;
+    font-size: 13px;
+    margin: 25px 10px 3px 0px;
+}
+.contactform input{
+  padding: 13px 20px;
+      margin: 0px 20px 0px 0px;
+      border: 1px solid rgb(239, 237, 237);
+      border-radius: 9px;
+      background-color: rgb(243, 241, 241);
+      font-size: 13px;
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;   
+}
+.contactform input:focus{
+  border-color: #c2c3c4; 
+  box-shadow: 0 0 5px rgba(229, 230, 230, 0.5);
+    outline: none;   
+}
+
+.contactform .agreement p{
+font-size: 12px;
+color: black;
+font-weight: 520;
+letter-spacing: 0px;
+margin-left: 30px;
+position: relative;
+ margin:20px 25px 0px 25px;
+}
+.contactform .agreement input{
+  position: absolute;
+margin-top: 25px;
+cursor: pointer;
+}
+.contactform .responseMe{
+    font-size: 11px;
+    color: rgb(54, 53, 53);
+    letter-spacing: 0px;
+    padding: 10px;
+    
+    margin: 10px 0px 10px 0px;
+    font-weight: 400;
+    background-color: rgb(243, 241, 241);
+    border-radius: 10px;
+}
+.contactform i{
+    font-size: 15px;
+    color: white;
+    margin: 15px 15px 0px 0px;
+}
+.contactform .sendMessage{
+    background-color: rgb(5, 208, 5);
+    padding: 10px;
+    width: 90%;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 550;
+    transition:  0.3s ease  
+}
+.contactform .sendMessage:hover{
+   background-color: green; 
 }
