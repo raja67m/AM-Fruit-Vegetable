@@ -1,5 +1,7 @@
 @import url('https://cdn-uicons.flaticon.com/3.0.0/uicons-thin-rounded/css/uicons-thin-rounded.css');
 @import url('https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-straight/css/uicons-regular-straight.css');
+@import url('https://cdn-uicons.flaticon.com/3.0.0/uicons-bold-rounded/css/uicons-bold-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-straight/css/uicons-regular-straight.css');
 *{
     margin: 0px;
     padding: 0px;
@@ -200,3 +202,31 @@ cursor: pointer;
 .contactform .sendMessage:hover{
    background-color: green; 
 }
+
+/* customer review start */
+.customerFeedContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+.customerFeedContainer h1{
+    margin-top: 10px;
+    font-size: 25px;
+      font-family:"Poppins";
+      font-weight: 500;
+}
+.customerFeedContainer p{
+   font-size: 20px;   
+color: rgb(72, 70, 70);
+text-align: center;
+margin: 5px;  
+}
+
+.customerFeedContainer .reviewContainer{
+    display: flex;
+    flex-direction: row;
+}
+
+/* customer review end  */
