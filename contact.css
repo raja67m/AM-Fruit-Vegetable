@@ -297,7 +297,6 @@ color: orange;
      font-size: 14px;
 margin-top: 6px;
 }
-
 .submitReview .chooseOp .no:hover{
 background-color: red; 
 color: white;
@@ -329,4 +328,46 @@ color: white;
 background-color: rgb(2, 168, 2);
 }
 
+.cusReviews{
+display: flex;
+flex-direction: column;
+
+}
+.cusReviews .cusRating{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid rgb(233, 230, 230);
+    border-radius: 7px;
+    margin-top: 10px;
+    background-color: white;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+  
+}
+.totalReviews{
+    display: flex;
+    flex-direction:column;
+}
+.totalReviews .reviewBar{
+    display: flex;
+    flex-direction: row;
+   
+}
+.progressBar {
+    background: rgb(236, 235, 235);
+    border-radius: 13px;
+    height: 8px;
+    width: 200px;
+   
+}
+.progressBar:after {
+    content: '';
+    display: block;
+    background: #ffd900;
+    width: 50%;
+    height: 100%;
+    border-radius: 9px;
+  
+}
 /* customer review end  */
