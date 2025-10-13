@@ -237,7 +237,7 @@ margin: 5px;
   display: flex;
   flex-direction: column; 
   margin: 5px;
-  padding: 15px; 
+  height: max-content;
     padding: 25px ;
   border: 2px solid gray; 
   margin: 10px; 
@@ -343,7 +343,7 @@ flex-direction: column;
     padding: 20px;
     justify-content: center;
     align-items: center;
-  
+  margin: 10px;
 }
 .cusRating .rateStar{
 display: flex;
@@ -369,7 +369,7 @@ font-size: 15px;
 .totalReviews{
     display: flex;
     flex-direction:column;
-    padding: 20px 50px;
+    padding: 20px 20px;
 }
 .totalReviews .reviewBar{
     display: flex;
@@ -409,3 +409,72 @@ margin-right: 5px !important;
   
 }
 /* customer review end  */
+/* customer review section  */
+.cusReviews h1{
+     margin-top: 10px;
+    font-size: 19px;
+      font-family:"Poppins";
+      font-weight: 500;  
+      margin: 20px 0px 20px 10px;
+}
+.cusReviews .reviewSection{
+    display: flex;
+    flex-direction: column;
+   border-radius: 8px;
+    border: 1px solid rgb(233, 230, 230);
+   padding:25px;
+   background-color:white;
+   margin: 10px;
+}
+.cusReviews .writeReview{
+display: flex;
+flex-direction: row;
+align-items: start;
+}
+.cusReviews .writeReview span{
+color: green;
+border-radius: 60%;
+padding: 10px 12px;
+font-weight: 400;
+font-size: 15px;
+background-color: rgb(191, 249, 191);
+font-family:"Poppins";
+}
+.cusReviews .writeReview p{
+   color: black; 
+   font-family:"Poppins";
+   font-size: 14px;
+   margin-left: 15px;
+   margin-bottom: 0px !important;
+}
+.cusReviews .writeReview .rating{
+ margin-left: 15px;
+}
+.cusReviews .writeReview .rating .check-4{
+  font-size: 12px;
+    color: orange;
+}
+.cusReviews .writeReview .rating .check-no{
+  font-size: 12px;
+    color:gray;
+}
+
+.cusReviews .writeReview #verify{
+    border: 1px solid green;
+    background-color: none !important;
+    padding: 3px;
+    font-size: 12px;
+    border-radius: 10px;
+    color: green;
+}
+.cusReviews .writeReview #date{
+    color: gray;
+    font-size: 15px;
+    font-weight: 400;
+margin-left: 400px; 
+}
+.reviewSection p{
+    color: rgb(67, 65, 65);
+    font-size: 17px;
+    margin: 10px;
+}
