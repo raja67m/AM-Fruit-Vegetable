@@ -345,21 +345,59 @@ flex-direction: column;
     align-items: center;
   
 }
+.cusRating .rateStar{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 20px;
+}
+.cusRating .rateStar span{
+    font-size: 45px;
+    color: rgb(13, 185, 13);
+         font-family:"Poppins";
+         font-weight: 400;
+}
+.cusRating .rateStar .rating i{
+    color: orange;
+    font-size: 15px;
+}
+.cusRating .rateStar p{
+color: gray;
+font-size: 15px;
+}
 .totalReviews{
     display: flex;
     flex-direction:column;
+    padding: 20px 50px;
 }
 .totalReviews .reviewBar{
     display: flex;
     flex-direction: row;
-   
+    margin: 4px;
+
 }
-.progressBar {
+.totalReviews .reviewBar span{
+    color: gray;
+    font-size: 13px;
+    padding:0px !important;
+}
+.totalReviews .reviewBar  span i{
+font-size: 11px !important;
+margin-right: 5px !important;
+}
+.totalReviews .reviewBar p{
+   color: gray;
+    font-size: 13px;
+    padding:0px !important;
+    margin: 0px 6px !important;
+}
+.progressBar ,.progressBar-1,.progressBar-2,.progressBar-3{
     background: rgb(236, 235, 235);
     border-radius: 13px;
     height: 8px;
     width: 200px;
-   
+    margin-top: 5px;
 }
 .progressBar:after {
     content: '';
