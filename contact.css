@@ -6,6 +6,7 @@
 @import url('https://cdn-uicons.flaticon.com/3.0.0/uicons-thin-rounded/css/uicons-thin-rounded.css');
 @import url('https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-straight/css/uicons-regular-straight.css');
 @import url('https://cdn-uicons.flaticon.com/3.0.0/uicons-solid-straight/css/uicons-solid-straight.css');
+@import url('https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css');
 *{
     margin: 0px;
     padding: 0px;
@@ -477,4 +478,62 @@ margin-left: 400px;
     color: rgb(67, 65, 65);
     font-size: 17px;
     margin: 10px;
+}
+/* footer section started */
+footer{
+    background-color:#000d1a;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+footer .ContactDetails{
+    display: flex;
+    flex-direction: row;
+}
+footer .ContactDetails .AmVegLogo{
+width: 40%;
+}
+footer .ContactDetails .AmVegLogo>div{
+    display:inline-flex;
+}
+footer .ContactDetails .AmVegLogo i{
+    background-color: rgb(4, 162, 4);
+    padding: 10px 14px;
+    border-radius: 7px;
+}
+footer .ContactDetails .AmVegLogo h1{
+ margin-left: 10px;
+font-size: 20px;
+font-family:"Poppins";
+font-weight: 400;
+line-height: 20px;
+}
+footer .ContactDetails .AmVegLogo span{
+    font-size: 13px;
+    color: gray;
+}
+footer .ContactDetails .AmVegLogo p{
+   margin:20px 10px 10px 0px; 
+   font-family:"Poppins";
+   font-size: 14px;
+   text-align: justify;
+}
+footer .ContactDetails .company,.products,.services,.support{
+margin: 0px 10px 10px 60px;
+  font-family:"Poppins";
+  font-weight: 550;
+}
+footer .ContactDetails ul{
+list-style-type: none;
+margin-top: 10px;
+cursor: pointer;
+}
+footer .ContactDetails ul li{
+margin-top:7px;
+font-weight: 300;
+color: gray;
+}
+footer .ContactDetails ul li:hover{
+    color: rgb(9, 184, 9);
 }
