@@ -575,3 +575,77 @@ footer .Contact .followus i:hover{
     color:white;
     background-color:green ;
 }
+footer .verticalLine{
+height: 1px;
+width: 100%;
+background-color:#041f3b;
+margin: 50px 10px 10px 10px;
+}
+footer .newsLetter{
+    display: flex;
+    flex-direction: row;
+ margin-top: 40px;
+}
+footer .newsLetter h1{
+  margin-left: 10px;
+font-size: 20px;
+font-family:"Poppins";
+font-weight: 400;
+line-height: 30px;  
+font-size: 20px; 
+}
+footer .newsLetter span{
+       font-size: 15px;
+   color: gray;
+   font-family:"Poppins";
+font-weight: 300;
+letter-spacing: .5px;
+}
+footer .newsLetter input{
+background-color:#041f3b;
+margin:20px 10px 0px 70px;
+padding: 14px 90px;
+outline: none;
+border: 1px solid #041f3b ;
+border-radius: 8px;
+}
+footer .newsLetter button{
+    background-color: green;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 35px !important;
+    margin:20px 10px 0px 0px;
+    color: white;
+    font-family:"Poppins";
+    cursor: pointer;
+}
+footer .newsLetter button:hover{
+    background-color: rgb(3, 86, 3);
+}
+footer .copyright{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+     margin-top: 40px;
+}
+footer .copyright p{
+ font-size: 15px;
+   color: gray;
+   font-family:"Poppins";
+   font-weight: 300;   
+}
+footer .copyright ul{
+    display:inline-flex;
+    list-style-type: none;
+}
+footer .copyright ul li{
+    margin-right: 24px;
+    cursor: pointer;
+      font-size: 15px;
+       color: gray;
+   font-family:"Poppins";
+}
+footer .copyright ul li:hover{
+    color: green;
+  
+}
