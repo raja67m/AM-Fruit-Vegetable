@@ -7,6 +7,7 @@
 @import url('https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-straight/css/uicons-regular-straight.css');
 @import url('https://cdn-uicons.flaticon.com/3.0.0/uicons-solid-straight/css/uicons-solid-straight.css');
 @import url('https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/3.0.0/uicons-thin-chubby/css/uicons-thin-chubby.css');
 *{
     margin: 0px;
     padding: 0px;
@@ -531,9 +532,39 @@ cursor: pointer;
 }
 footer .ContactDetails ul li{
 margin-top:7px;
-font-weight: 300;
+font-weight: 400;
 color: gray;
 }
 footer .ContactDetails ul li:hover{
     color: rgb(9, 184, 9);
+}
+footer .Contact{
+    display: flex;
+    flex-direction: row;
+}
+footer .Contact .contactInfo{
+    display: flex;
+}
+footer .Contact .contactInfo .contactLogo{
+    display: flex;
+    flex-direction: column;
+}
+footer .Contact .contactInfo .contactLogo i{
+    color: rgb(3, 170, 3);
+    margin-top: 10px;
+}
+footer .Contact .contactInfo .contacted p{
+   margin: 10px 15px 0px 15px; 
+}
+footer .Contact .followus p{
+  font-family:"Poppins";
+  font-weight: 550;
+}
+footer .Contact .followus i{
+    margin:16px 5px 0px 0px !important;
+    background-color:#041f3b;
+    padding: 6px 6px 3px 6px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 12px;
 }
