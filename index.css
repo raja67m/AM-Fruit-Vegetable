@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900");
 
 @import url('https://cdn-uicons.flaticon.com/3.0.0/uicons-brands/css/uicons-brands.css');
+@import url('https://cdn-uicons.flaticon.com/3.0.0/uicons-bold-rounded/css/uicons-bold-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/3.0.0/uicons-solid-straight/css/uicons-solid-straight.css');
 *{
     margin: 0px;
     padding: 0px;
@@ -11,10 +13,10 @@ body{
 }
 a{
 text-decoration: none !important;
+position:relative;
 }
 .header{
- 
-    display: flex;
+ display: flex;
     flex-direction: row;
    padding:10px;
     background-color: white;
@@ -245,4 +247,108 @@ font-weight: 500;
   font-size: 14px !important;
 }
 
-/* mobile responsive design */
+/* mobile based nav bar */
+.mobileNav{
+  display: flex;
+  flex-direction: column;
+  height: max-content;
+  width: 60%;
+  padding: 20px;
+  background-color: white;
+  position:absolute;
+  top: 85px;
+  left: 30%;
+}
+.mobileNav input{
+   background-color: rgb(242, 239, 239);
+   border: 1px solid rgb(218, 215, 215);
+  border: none;
+  padding: 14px 50px;
+  border-radius: 8px;
+  color: rgb(115, 114, 114);
+  letter-spacing: 2px;
+ transition: border-color 0.3s ease, box-shadow 0.3s ease; 
+}
+.mobileNav input:focus{
+border-color: #bcbdbd; 
+box-shadow: 0 0 5px rgba(229, 230, 230, 0.5);
+outline: none;
+}
+.mobileNav ul{
+  list-style-type: none;
+
+margin: 10px;
+}
+.mobileNav ul li ,a{
+  margin: 20px;
+  color: black;
+  font-size: 14px;
+  text-align: center;
+   font-family:"Poppins";
+   cursor: pointer;
+   padding: 10px;
+}
+.mobileNav ul li:hover{
+ color: rgb(56, 200, 56);
+    background-color: rgb(229, 255, 229);
+}
+.mobileNav #callBtn{
+  display: block;
+   padding: 7px 15px;
+    border:1px solid rgb(18, 179, 55);
+    background-color:white;
+    color: rgb(32, 158, 32);
+    font-weight: bold;
+    cursor:pointer;
+    border-radius: 7px;
+
+    font-size: 17px;
+}
+.mobileNav #callBtn:hover{
+  color: black;
+}
+.mobileNav #orderBtn{
+display: block;
+   padding: 7px 15px;
+    border:1px solid gray;
+    background-color:white;
+    color:black;
+    font-weight: bold;
+    cursor:pointer;
+    border-radius: 7px;
+    margin-top: 10px;
+    font-size: 17px;
+   
+}
+.mobileNav #orderBtn:hover{
+ background-color: rgb(243, 238, 238);
+}
+.mobileNav .fi-ss-shopping-cart{ 
+  font-size: 15px;
+  margin-right: 20px;
+}
+
+/* mobile responsive design start */
+
+.header .fi-br-menu-burger  {
+  margin: 5px;
+  cursor: pointer;
+  display: none;
+}
+@media screen and (max-width:767px)and (max-width:960px){
+
+.header .fi-br-menu-burger  {
+display: block;
+margin: 14px 10px 10px 150px;
+
+}
+.header nav ul {
+  display: none;
+}
+.header nav input,button,.fi-sr-shopping-cart{
+  display: none;
+}
+
+}
+
+
