@@ -248,8 +248,11 @@ font-weight: 500;
 }
 
 /* mobile based nav bar */
+.resMenu{
+  display: none;
+}
 .mobileNav{
-  display: flex;
+  display: none;
   flex-direction: column;
   height: max-content;
   width: 60%;
