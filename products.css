@@ -4,13 +4,14 @@
 }
 body{
     background-color: white;
+  
 }
 .productBody{
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
-  
+
     padding: 10px;
 }
 .productBody span{
@@ -60,7 +61,7 @@ font-size: 30px;
 gap: 15px;
     padding: 5px;
     margin: 15px;
-    z-index: -99;
+
     
 }
 .products{
@@ -75,6 +76,9 @@ gap: 15px;
  background-color: white;
  cursor: pointer;
  position: relative;
+ z-index: 1;
+ 
+     
 }
 .products:hover{
       box-shadow:  0px 0px 7px #aaaaaa,
@@ -142,8 +146,9 @@ width: 300px;
     color: white;
     font-weight: 480;
     cursor:pointer;
+    z-index: 10;
     border-radius: 7px;
-    margin-left: 10px;
+ 
     font-size: 16px;
     margin: 5px 0px 15px 5px !important;
     transition: .2s ease-out;
@@ -160,10 +165,10 @@ width: 300px;
 .productAdd span{
     margin: 7px 5px 17px 8px;
     color:black;
-    border: 2px solid gray;
+    border: 1px solid gray;
     padding:8px;
     border-radius: 6px;
-    cursor: pointer;
+    cursor: pointer !important;
 }
 .productAdd span:hover{
     background-color: rgb(240, 236, 236);
@@ -254,3 +259,30 @@ font-size: 15px;
     border-radius: 8px;
     font-weight: 500;
 }
+
+/* mobile responsive deign start */
+@media screen and (max-width:767px)and (max-width:960px){
+.productBody .filter-tap{
+    display: flex;
+ flex-direction: row;
+ width:80%;
+ padding: 5px;
+}
+ .productBody .filter-tap button{
+ display: block;
+ font-size: 14px;
+}
+.productGrid{
+  grid-template-columns:repeat(1,6fr);   
+}
+
+.products button{
+     padding: 10px 55px;
+     display: block;
+    cursor: pointer;
+    font-size: 14px;
+ 
+}
+
+}
+
