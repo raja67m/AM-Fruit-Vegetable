@@ -699,12 +699,50 @@ padding:10px;
 }
 
 .cusReviews .writeReview #date{
-    color: gray;
-    font-size: 10px;
-    font-weight: 400;
+color: gray;
+font-size: 10px;
+font-weight: 400;
 margin-left: 30px; 
 }
 .reviewSection p{
     font-size: 15px;
+}
+}
+/* footer responsive design */
+@media screen and (max-width:767px)and (max-width:960px){
+footer .ContactDetails{
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+footer .ContactDetails .AmVegLogo{
+width: 100%;
+}
+footer .ContactDetails .company,.support{
+margin: 0px 10px 10px 0px;
+}
+footer .newsLetter{
+justify-content: center;
+    flex-direction:column;
+align-items: center;
+}
+footer .newsLetter button{
+    display: block;
+    margin-left:40px;
+}
+footer .copyright{
+    flex-direction: column;
+    margin: 15px;
+}
+footer .copyright ul li{
+    margin-right: 16px;
+    margin-top: 16px;
+    font-size: 14px;
+}
+footer .Contact .followus i{
+   
+   font-size:14px;
+     margin-right: 0px;
+
 }
 }
