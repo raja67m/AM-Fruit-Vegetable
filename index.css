@@ -335,7 +335,7 @@ display: block;
 
 /* mobile responsive design start */
 
-.header .fi-br-menu-burger  {
+.header .fi-br-menu-burger ,#close{
   margin: 5px;
   cursor: pointer;
   display: none;
