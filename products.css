@@ -36,7 +36,7 @@ font-size: 30px;
     align-items: center;
  
 }
-.productBody .filter-tap button{
+.productBody .filter-tap .filter-btn{
     cursor: pointer;
     background-color: rgb(228, 227, 227);
     border: none;
@@ -47,7 +47,12 @@ font-size: 30px;
       font-family:"Poppins";
       padding: 15px;
 }
-.productBody .filter-tap button:hover{
+.productBody .filter-tap .filter-btn:hover{
+    background-color: white;
+    border-radius: 14px;
+     padding: 8px 15px;
+}
+.filActive{
     background-color: white;
     border-radius: 14px;
      padding: 8px 15px;

@@ -48,8 +48,11 @@ reviews:"(154 reviews)",price:"$4.2",Image:"./frutis/graphys.jpg"},
 
 
 const productContainer = document.getElementById("proGird");
+const buttons = document.querySelectorAll(".filter-btn");
 
 function displayProducts(items) {
+
+   
   productContainer.innerHTML = items
     .map(
       (item) => `
@@ -78,7 +81,11 @@ function displayProducts(items) {
 
 displayProducts(products);
 
-function filterItems(category) {
+function filterItems(category,btn) {
+       buttons.forEach((b) => b.classList.remove("filActive"));
+
+  // Add active class to clicked button
+//   btn.classList.add("filActive");
   if (category === "all") {
     displayProducts(products);
   } else {
