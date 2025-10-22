@@ -50,17 +50,17 @@
                 <p>Discover our wide selection of fresh, organic fruits and vegetables sourced<br> directly from trusted local farms.</p>
                 <!-- product filter tap -->
                  <div class="filter-tap">
-                    <button class="all-products">All Products</button>
-                    <button class="fruits">Frutis</button>
-                    <button class="vegetables">Vegetables</button>
+                    <button  onclick="filterItems('all')" class="all-products">All Products</button>
+                    <button  onclick="filterItems('fruit')"   class="fruits">Frutis</button>
+                    <button  onclick="filterItems('veg')" class="vegetables">Vegetables</button>
                  </div>
                  <!-- product filter tap end -->
 
                   <!-- products show section start -->
 
-                        <div class="productGrid">
+                        <div class="productGrid" id="proGird">
 
-                            <!-- products added start  -->
+                            <!-- products added start 
                             <div class="products">
                                 <img src="./frutis/apple.jpg" alt="Not Visible">
                                     <p class="Pname">Organic Red Apples</p>
@@ -79,7 +79,7 @@
                                     </div>
                             </div>
                                    
-                            <!--  -->
+                         
                              <div class="products">
                                 <img src="./frutis/banana.jpg" alt="Not Visible">
                                     <p class="Pname">Fresh Bananas</p>
@@ -97,7 +97,7 @@
                                             </span>
                                     </div>
                             </div>
-                                <!--  -->
+                                
                              <div class="products">
                                 <img src="./frutis/orange.jpg" alt="Not Visible">
                                     <p class="Pname">Orange Citrus</p>
@@ -115,7 +115,7 @@
                                             </span>
                                     </div>
                             </div>
-                                <!--  -->
+                                
                              <div class="products">
                                 <img src="./veg/carrert.jpg" alt="Not Visible">
                                     <p class="Pname">Fresh Carrots</p>
@@ -133,7 +133,7 @@
                                             </span>
                                     </div>
                             </div>
-                                <!--  -->
+                                
                              <div class="products">
                                 <img src="./veg/tomato.jpg" alt="Not Visible">
                                     <p class="Pname">Red Tomatoes</p>
@@ -151,7 +151,7 @@
                                             </span>
                                     </div>
                             </div>
-                                        <!--  -->
+                                      
                                  <div class="products">
                                 <img src="./veg/broccoli.jpg" alt="Not Visible">
                                     <p class="Pname">Green Broccoli</p>
@@ -169,7 +169,7 @@
                                             </span>
                                     </div>
                             </div>
-                                    <!--  -->
+                                  
 
                                          <div class="products">
                                 <img src="./veg/cabbage.jpg" alt="Not Visible">
@@ -188,7 +188,7 @@
                                             </span>
                                     </div>
                             </div>
-                                <!--  -->
+                                
                              <div class="products">
                                 <img src="./frutis/manago.jpg" alt="Not Visible">
                                     <p class="Pname">Mango</p>
@@ -206,7 +206,7 @@
                                             </span>
                                     </div>
                             </div>
-                                    <!--  -->   
+                                     
                                  <div class="products">
                                 <img src="./frutis/pineapple.jpg" alt="Not Visible">
                                     <p class="Pname">Pineapple </p>
@@ -224,7 +224,7 @@
                                             </span>
                                     </div>
                             </div>
-                                <!--  -->
+                                
                                  <div class="products">
                                 <img src="./frutis/graphys.jpg" alt="Not Visible">
                                     <p class="Pname">Grapes</p>
@@ -241,7 +241,7 @@
                                                     visibility
                                             </span>
                                     </div>
-                            </div>
+                            </div> -->
 
 
                             <!-- product showing end  -->
@@ -271,5 +271,7 @@
 
  <script src="./search.js"></script>   
  <script src="./navbar.js"></script>   
+ <script src="./filterproducts.js"></script>   
+
 </body>
 </html>
