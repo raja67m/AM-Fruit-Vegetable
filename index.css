@@ -250,19 +250,22 @@ font-weight: 500;
 }
 
 /* mobile based nav bar */
-.resMenu{
-  display: none;
+#mobRes{
+   top:65px;
+  left: 30%;
+    width: 70%;
+display: none;
+    position:absolute;
+    z-index: 1000;
 }
 .mobileNav{
-  display: none;
+  display:flex;
   flex-direction: column;
   height: max-content;
-  width: 60%;
-  padding: 20px;
+  padding: 30px;
   background-color: white;
-  position:absolute;
-  top: 85px;
-  left: 30%;
+
+ 
 }
 .mobileNav input{
    background-color: rgb(242, 239, 239);
@@ -335,17 +338,19 @@ display: block;
 
 /* mobile responsive design start */
 
-.header .fi-br-menu-burger ,#close{
+.header .fi-br-menu-burger,#close{
   margin: 5px;
   cursor: pointer;
   display: none;
 }
 @media screen and (max-width:767px)and (max-width:960px){
 
-.header .fi-br-menu-burger  {
+.header .fi-br-menu-burger{
 display: block;
 margin: 14px 10px 10px 150px;
-
+}
+.header #close{
+margin: 14px 10px 10px 150px;
 }
 .header nav ul {
   display: none;
