@@ -31,15 +31,15 @@ reviews:"(110 reviews)",price:"$2.99",Image:"./veg/broccoli.jpg"},
 reviews:"(40 reviews)",price:"$2.99",Image:"./veg/cabbage.jpg"},
 
 
-{name:"Mango",type:"furit",des:"sweet tropical fruit and a member of the Anacardiaceae family.",rate:"4.9",
+{name:"Mango",type:"fruit",des:"sweet tropical fruit and a member of the Anacardiaceae family.",rate:"4.9",
 
 reviews:"(124 reviews)",price:"$4.9",Image:"./frutis/manago.jpg"},
 
-{name:"Pineapple",type:"furit",des:"a tropical fruit from the Bromeliaceae family.",rate:"4.2",
+{name:"Pineapple",type:"fruit",des:"a tropical fruit from the Bromeliaceae family.",rate:"4.2",
 
 reviews:"(20 reviews)",price:"$4.2",Image:"./frutis/pineapple.jpg"},
 
-{name:"Grapes",type:"furit",des:"support heart health, brain function, and immunity",rate:"4.9",
+{name:"Grapes",type:"fruit",des:"support heart health, brain function, and immunity",rate:"4.9",
 
 reviews:"(154 reviews)",price:"$4.2",Image:"./frutis/graphys.jpg"},
 
@@ -81,15 +81,22 @@ function displayProducts(items) {
 
 displayProducts(products);
 
-function filterItems(category,btn) {
-       buttons.forEach((b) => b.classList.remove("filActive"));
+buttons.forEach((button) => {
+  button.addEventListener("click", () => {
+    // Remove active state from all buttons
+    buttons.forEach((b) => b.classList.remove("filActive"));
 
-  // Add active class to clicked button
-//   btn.classList.add("filActive");
-  if (category === "all") {
-    displayProducts(products);
-  } else {
-    const filtered = products.filter((item) => item.type === category);
-    displayProducts(filtered);
-  }
-}
+    // Add active class to the clicked one
+    button.classList.add("filActive");
+
+  const category = button.dataset.type;
+
+    // Filter and display
+    if (category === "all") {
+      displayProducts(products);
+    } else {
+      const filtered = products.filter((item) => item.type === category);
+      displayProducts(filtered);
+    }
+  });
+});
