@@ -4,6 +4,7 @@
 @import url('https://cdn-uicons.flaticon.com/3.0.0/uicons-bold-rounded/css/uicons-bold-rounded.css');
 @import url('https://cdn-uicons.flaticon.com/3.0.0/uicons-solid-straight/css/uicons-solid-straight.css');
 @import url('https://cdn-uicons.flaticon.com/3.0.0/uicons-bold-straight/css/uicons-bold-straight.css');
+@import url('https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css');
 *{
     margin: 0px;
     padding: 0px;
@@ -167,11 +168,16 @@ background-color: #ffffff;
     display: flex;
     flex-direction: column;
 }
-.bodyContainer .secRow img{
-border-radius: 7px;
-margin-top: 80px;
-cursor: pointer;
+.bodyContainer .slider{
+position: relative;
+ overflow: hidden;
+  border-radius: 10px;
+  width: 60%;
 }
+
+
+
+
 .bodyContainer .firstRow h1{
  font-family:"Poppins";
  margin-top: 10px;
@@ -365,7 +371,7 @@ margin: 14px 10px 10px 150px;
 .bodyContainer{
 flex-direction:column;
 }
-.bodyContainer .secRow img{
+.bodyContainer .slider img{
 width: 100%;
 height: 100%;
 margin-top: 20px;
