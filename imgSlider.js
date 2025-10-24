@@ -6,7 +6,7 @@ let currentIndex = 0;
 
 // Function to show a specific slide
 function showSlide(index) {
-  slides.forEach((slide, i) => {
+  slides.forEach((slide) => {
     slide.classList.remove('slideActive');
     slide.style.opacity = '0';
   });
