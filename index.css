@@ -171,13 +171,42 @@ background-color: #ffffff;
 .bodyContainer .slider{
 position: relative;
  overflow: hidden;
+ margin-top: 80px;
   border-radius: 10px;
   width: 60%;
 }
-
-
-
-
+.bodyContainer .slider .slide{
+ width: 100%;
+ height: 80%;
+ position: absolute;
+ object-fit: cover;
+ transition: opacity 0.7s ease-in-out;
+ opacity: 0;
+}
+.slider .slideActive{
+  opacity: 1;
+}
+.bodyContainer .slider .navgation{
+  position:absolute;
+  display: flex;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  justify-content: space-between;
+}
+.bodyContainer .slider .navgation button{
+ background: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  font-size: 20px;
+border-radius: 50%;
+  padding: 10px 13px;
+  cursor: pointer;
+   transition: background 0.3s;
+}
+.bodyContainer .slider .navgation button:hover{
+   background: rgba(0, 0, 0, 0.8);
+}
 .bodyContainer .firstRow h1{
  font-family:"Poppins";
  margin-top: 10px;

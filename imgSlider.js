@@ -1,27 +1,36 @@
 const slides = document.querySelectorAll('.slide');
-const nextBtn = document.querySelector('.next');
-const prevBtn = document.querySelector('.prev');
+const nextBtn = document.querySelector('.nextBtn');
+const prevBtn = document.querySelector('.prevBtn');
 
-let index = 0;
+let currentIndex = 0;
 
-function showSlide(i) {
-  slides.forEach((slide, idx) => {
-    slide.classList.toggle('active', idx === i);
+// Function to show a specific slide
+function showSlide(index) {
+  slides.forEach((slide, i) => {
+    slide.classList.remove('slideActive');
+    slide.style.opacity = '0';
   });
+  slides[index].classList.add('slideActive');
+  slides[index].style.opacity = '1';
 }
 
+
+showSlide(currentIndex);
+
+// Next button
 nextBtn.addEventListener('click', () => {
-  index = (index + 1) % slides.length;
-  showSlide(index);
+  currentIndex = (currentIndex + 1) % slides.length;
+  showSlide(currentIndex);
 });
 
+// Prev button
 prevBtn.addEventListener('click', () => {
-  index = (index - 1 + slides.length) % slides.length;
-  showSlide(index);
+  currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+  showSlide(currentIndex);
 });
 
-// Auto slide every 3 seconds
+// Optional: Auto-slide every 4 seconds
 setInterval(() => {
-  index = (index + 1) % slides.length;
-  showSlide(index);
-}, 3000);
+  currentIndex = (currentIndex + 1) % slides.length;
+  showSlide(currentIndex);
+}, 4000);
