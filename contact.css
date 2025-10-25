@@ -722,6 +722,9 @@ margin-left: 30px;
 .reviewSection p{
     font-size: 15px;
 }
+.contactform .sendMessage{
+    display: block;
+}
 }
 /* footer responsive design */
 @media screen and (max-width:767px)and (max-width:960px){
