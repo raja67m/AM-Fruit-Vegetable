@@ -195,7 +195,7 @@ position: relative;
   display: flex;
   width: 100%;
   top: 50%;
-  max-width: 800px;
+  height: auto;
   left: 0;
   transform: translateY(-50%);
   justify-content: space-between;
@@ -411,18 +411,21 @@ flex-direction: column;
   width: 100%;
   height: 300px;
   margin-top: 40px;
+  z-index: 100;
 }
+  .bodyContainer .slider .navgation {
+    top: 45%;
+    transform: translateY(-45%);
+  
+   
+  }
+ .bodyContainer .slider .navgation button {
+    font-size: 14px;
+    padding: 6px 8px;
+     z-index:10;
+    pointer-events:auto;
+  }
 
-.bodyContainer .slider .navgation{
-top: 20%;
-}
-.bodyContainer .slider .navgation button{
-
-  font-size: 15px;
-
-  padding: 4px 8px;
-
-}
 }
 
 
