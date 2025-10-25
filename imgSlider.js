@@ -4,7 +4,7 @@ const prevBtn = document.querySelector('.prevBtn');
 
 let currentIndex = 0;
 
-// Function to show a specific slide
+// image slide function
 function showSlide(index) {
   slides.forEach((slide) => {
     slide.classList.remove('slideActive');
@@ -29,7 +29,7 @@ prevBtn.addEventListener('click', () => {
   showSlide(currentIndex);
 });
 
-// Optional: Auto-slide every 4 seconds
+
 setInterval(() => {
   currentIndex = (currentIndex + 1) % slides.length;
   showSlide(currentIndex);
