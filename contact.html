@@ -97,22 +97,22 @@
                 </div>
                     <!-- bussiness time end -->
             </div>
-            <form class="contactform">
+            <form class="contactform" id="form">
                 <p>Send us a Message</p>
                     <div class="messageCon">
                         <div class="firstRow">
                             <label>Full Name*</label>
-                            <input type="text" name="fullname" placeholder="Enter your full Name">
+                            <input type="text" name="fullname" id="fullName" placeholder="Enter your full Name">
                             <label>Phone*</label>
-                            <input type="text" name="phone" placeholder="Enter your phone number">
+                            <input type="text" name="phone" id="phoneNum" placeholder="Enter your phone number">
                         </div>
                         <div class="secrow">
                             <label>Email Address*</label>
-                            <input type="email" name="email" placeholder="Enter your email address">
+                            <input type="email" name="email" id="emailID" placeholder="Enter your email address">
 
                             <label>Inquiry</label>
-                            <select>
-                                <option  value="Product Inquiery">Product Inquiry</option>
+                            <select required>
+                                <option value="Product Inquiery">Product Inquiry</option>
                                  <option value="Bluk Order">Bluk Order</option>
                                  <option value="PartnerShip Opportunity">PartnerShip Opportunity</option>
                                  <option value="Develivery Information">Develivery Information</option>
@@ -122,20 +122,20 @@
                         </div>
                     </div> 
                                 <label>Subject*</label>
-                                <input type="text" name="subject" placeholder="Brife Subject of your inquiry">
+                                <input type="text" name="subject"  id="subject" placeholder="Brife Subject of your inquiry">
                                 <label>Message</label>
                                 <input type="text" name="message" placeholder="Please provide details about your inquiry">
                                   
                                 <!-- agreement start -->
                                      <div class="agreement">
-                                        <input type="checkbox" name="newletter">
+                                        <input type="checkbox" name="newletter" required>
                                         <p>Subscribe to our newsletter for updates and specials offers</p>
-                                        <input type="checkbox" name="conditions">
+                                        <input type="checkbox" name="conditions" readonly>
                                         <p>I agree to the terms and conditions and privacy policy.</p>
                                      </div>
                                      <!-- agreement end -->
                                       <p class="responseMe">We typically response to Inquiery within 24 hours during business days</p>
-                                      <button class="sendMessage"><i class="fi fi-rs-paper-plane"></i>send Message</button>
+                                      <button type="submit" class="sendMessage"><i class="fi fi-rs-paper-plane"></i>send Message</button>
                            
             </form>
           </div>
@@ -147,10 +147,10 @@
                 <h1>Customer Feedback</h1>
                 <p>Your feedback helps us improve our products and services. Share your experience<br>and read what others are saying.</p>
                     <div class="reviewContainer">
-                        <div class="submitReview">
+                        <form class="submitReview" id="feedBackForm">
                             <p><i class="fi fi-br-comment-dots"></i>Share Your Experience</p>  
                             <label>Your Name</label> 
-                            <input type="text" name="fname" placeholder="Enter Your Name">
+                            <input type="text" name="fname" id="userName" placeholder="Enter Your Name">
                             <label>Ratting *</label> 
                             <div class="rating">
                           <i class="fi fi-ss-star"></i>
@@ -161,14 +161,14 @@
                             </div>
                         
                             <label>Your Review *</label> 
-                            <textarea type="text"  name="review" placeholder="Tell us about your experience"></textarea>
+                            <textarea type="text" id="feedBack" name="review" placeholder="Tell us about your experience"></textarea>
                             <label>Would you recommend us?</label>
                             <div class="chooseOp">
                                 <button class="yes"><i class="fi fi-rs-social-network"></i>Yes</button>
                                 <button class="no"><i class="fi fi-rs-hand"></i>No</button>
                             </div>
-                                <button class="sendmessage">Submit Review</button>
-                        </div>
+                                <button type="submit" class="sendmessage">Submit Review</button>
+                          </form>
                         <div class="cusReviews">
                                 <div class="cusRating">
                                     <div class="rateStar">
@@ -461,6 +461,8 @@
 
 <!-- mobile based nav bar end -->                     
 <script src="navbar.js"></script>
+<script src="./formValidation.js"></script>
+
 
 </body>
 </html>
